@@ -1,7 +1,25 @@
-from window import Window
+from graphics import Window
+from cell import Cell
 
 def main():
     win = Window(800, 600)
+
+    c = Cell(win)
+    c.left = False
+    c.draw(50, 50, 100, 100)
+
+    c = Cell(win)
+    c.right = False
+    c.draw(125, 125, 200, 200)
+
+    c = Cell(win)
+    c.bottom = False
+    c.draw(225, 225, 250, 250)
+
+    c = Cell(win)
+    c.top = False
+    c.draw(300, 300, 500, 500)
+
     win.wait_for_close()
 
 

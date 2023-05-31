@@ -1,7 +1,7 @@
 from graphics import Line, Point
 
 class Cell:
-    def __init__(self, win):
+    def __init__(self, win=None):
         self.left = True
         self.right = True
         self.top = True
